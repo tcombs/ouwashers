@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>Washers</title>
+        <link rel="stylesheet" src="http://normalize-css.googlecode.com/svn/trunk/normalize.css"/>
+        <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'
+        type='text/css'>
+        <link rel='stylesheet' type="text/css" href='/stylesheets/index.css' />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    
+    <body>
+        <div class="team-one-container team-container">
+            <div class="team-one-buttons buttons add-buttons">
+                <table>
+                    <tr>
+                        <td>
+                            <a href="/add/1/3" class="btn plus-three-team-one">+3</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="/add/1/1" class="btn plus-one-team-one">+1</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="team-one-buttons buttons sub-buttons">
+                <table>
+                    <tr>
+                        <td>
+                            <a href="/sub/1/3" class="btn minus-three-team-one">-3</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="/sub/1/1" class="btn minus-one-team-one">-1</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <table class="score-div">
+                <tr>
+                    <td>
+                        <span class="team-one-score">
+                            <%= teamOneScore %>
+                        </span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="banner">
+            <table class="banner-content">
+                <tr>
+                    <td>
+                        <span class="boomer text">BOOMER</span>
+                    </td>
+                    <td>
+                        <a href="/clear" class="image clear text">OU</a>
+                    </td>
+                    <td>
+                        <span class="sooner text">SOONER</span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="team-two-container team-container">
+            <div class="team-two-buttons buttons add-buttons">
+                <table>
+                    <tr>
+                        <td>
+                            <a href="/add/2/3" class="btn plus-three-team-two">+3</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="/add/2/1" class="btn plus-one-team-two">+1</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="team-two-buttons buttons sub-buttons">
+                <table>
+                    <tr>
+                        <td>
+                            <a href="/sub/2/3" class="btn minus-three-team-two">-3</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="/sub/2/1" class="btn minus-one-team-two">-1</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <table class="score-div">
+                <tr>
+                    <td>
+                        <span class="team-two-score">
+                            <%= teamTwoScore %>
+                        </span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <script src="/javascripts/jquery-2.0.3.js"></script>
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="/javascripts/index.js"></script>
+    </body>
+
+</html>

@@ -1,0 +1,107 @@
+html {
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+html body {
+  font-family: 'Oswald', sans-serif;
+  background-color: white;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+html body a {
+  text-decoration: none;
+}
+html body .btn-warning {
+  color: #841617;
+}
+html body .btn-warning:hover {
+  color: #841617;
+}
+html body .btn-danger {
+  color: #fdf9d8;
+}
+html body .btn-danger:hover {
+  color: #fdf9d8;
+}
+html body .banner {
+  text-align: center;
+  background-image: url('/images/binding_dark.png');
+  height: 10%;
+}
+html body .banner .banner-content {
+  height: 100%;
+  width: 100%;
+}
+html body .banner .banner-content td {
+  padding: 0;
+}
+html body .banner .banner-content .boomer {
+  color: #841617;
+}
+html body .banner .banner-content .sooner {
+  color: #fdf9d8;
+}
+html body .banner .banner-content .text {
+  font-size: 30px;
+}
+html body .banner .banner-content .clear {
+  color: #07D3B2;
+}
+html body .team-one-container {
+  background-color: #841617;
+}
+html body .team-one-container .team-one-score {
+  color: #fdf9d8;
+}
+html body .team-two-container {
+  background-color: #fdf9d8;
+}
+html body .team-two-container .team-two-score {
+  color: #841617;
+}
+html body .team-container {
+  height: 45%;
+  text-align: center;
+}
+html body .team-container .team-one-buttons .btn {
+  background-color: #fdf9d8;
+  color: #841617;
+}
+html body .team-container .team-two-buttons .btn {
+  background-color: #841617;
+  color: #fdf9d8;
+}
+html body .team-container .buttons {
+  height: 100%;
+}
+html body .team-container .buttons table {
+  height: 100%;
+  width: 50px;
+}
+html body .team-container .buttons table .btn {
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 40px;
+}
+html body .team-container .buttons table .btn:active {
+  -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+html body .team-container .add-buttons {
+  float: right;
+  display: inline;
+}
+html body .team-container .sub-buttons {
+  float: left;
+  display: inline;
+}
+html body .score-div {
+  height: 100%;
+  margin: auto;
+}
+html body .score-div td span {
+  font-size: 10em;
+}
