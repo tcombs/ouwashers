@@ -77,3 +77,5 @@ io.sockets.on('connection', function(socket)
 
     });
 });
+
+var temp = "35.206027,-97.442337";

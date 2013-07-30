@@ -1,11 +1,18 @@
 var Game = require('../models/game.js');
+var https = require("https");
 
 exports.index = function(req, res) {
-    Game.findOne(function(err, game) {
-        //res.setHeader('Access-Control-Allow-Origin','http://appName.userName.c9.io');
-        res.render('index', { teamOneScore: game.teamonescore, teamTwoScore: game.teamtwoscore });
-    });
+    
+    
+         
+        Game.findOne(function(err, game) {
+           
+            res.render('index', { teamOneScore: game.teamonescore, teamTwoScore: game.teamtwoscore});
+      
         
+    });
+    
+    
     
 };
 

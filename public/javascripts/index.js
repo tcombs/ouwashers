@@ -8,7 +8,7 @@ $(function()
 
     var $teamOneScoreHolder = $('.team-one-score');
     var $teamTwoScoreHolder = $('.team-two-score');
-    
+    setWeather();
     
     /*
     *
@@ -155,8 +155,19 @@ $(function()
         $.get(url, function(game)
         {
             socket.emit('changes', game);
+            setWeather();
+            
         });
 
     });
 
+    function setWeather() {
+        //get current weather (oklahoma stadium location)
+            var url = 'https://api.forecast.io/forecast/7ea9fa039d53603684a0a918a39bc862/35.206027,-97.442337' + "?callback=?";
+            $.getJSON(url,function(weather) {
+                var temp = weather.currently.temperature;
+                var intTemp = parseInt(temp);
+                $('.clear').empty().append(intTemp + '&deg;');
+            });
+    }
 });
