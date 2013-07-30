@@ -51,11 +51,16 @@ app.get('/clear', api.clear);
 
 
 //db connection
-var databaseSettings = require('./private/dbconnection.js');
-mongoose.connect(databaseSettings.dbconstring);
+mongoose.connect('mongodb://tcombs:ryanandtyler@dharma.mongohq.com:10066/ouwashers');
 
 
 //websockets
+//config socket.io to run on long pulling because huroku doesnt support websockets yet
+io.configure(function () { 
+  io.set("transports", ["xhr-polling"]); 
+  io.set("polling duration", 10); 
+});
+
 io.sockets.on('connection', function(socket)
 {
     socket.on('changes', function(game)

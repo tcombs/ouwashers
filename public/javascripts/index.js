@@ -17,7 +17,7 @@ $(function()
     *
     *
     */
-    var socket = io.connect('http://washers.tcombs.c9.io');
+    var socket = io.connect('http://ouwashers.tcombs.c9.io/');
     socket.on('update scores', function (data) {
         $teamOneScoreHolder.empty().append(data.game.teamonescore);
         $teamTwoScoreHolder.empty().append(data.game.teamtwoscore);
