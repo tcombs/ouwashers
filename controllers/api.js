@@ -2,14 +2,9 @@ var Game = require('../models/game.js');
 var https = require("https");
 
 exports.index = function(req, res) {
-    
-    
          
-        Game.findOne(function(err, game) {
-           
-            res.render('index', { teamOneScore: game.teamonescore, teamTwoScore: game.teamtwoscore});
-      
-        
+    Game.findOne(function(err, game) {
+        res.render('index', { teamOneScore: game.teamonescore, teamTwoScore: game.teamtwoscore});
     });
     
     

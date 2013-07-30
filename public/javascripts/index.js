@@ -149,14 +149,13 @@ $(function()
         });
     });
 
-    $('.clear').click(function(e){
+    $('.banner-content').click(function(e){
         e.preventDefault();
-        var url = $(this).attr('href');
+        var url = $('.clear').attr('href');
         $.get(url, function(game)
         {
             socket.emit('changes', game);
             setWeather();
-            
         });
 
     });
