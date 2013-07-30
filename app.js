@@ -7,7 +7,7 @@ var express = require('express'),
     user = require('./routes/user'),
     http = require('http'),
     path = require('path'),
-    mongoose = require('mongoose');;
+    mongoose = require('mongoose');
 
 var app = express();
 
